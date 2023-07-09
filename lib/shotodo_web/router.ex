@@ -26,6 +26,7 @@ defmodule ShotodoWeb.Router do
 
     scope "/v1" do
       resources("/accounts", AccountController, except: [:new, :edit])
+      resources("/users", UserController, except: [:new, :edit])
     end
   end
 
